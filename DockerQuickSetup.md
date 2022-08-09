@@ -72,3 +72,10 @@ ssh username@thatStaticIp -X
 ```
 
 # note: first call may not work after boot, after first attempt it will work properly
+
+
+
+# System Info
+```
+watch docker system df -v
+```
