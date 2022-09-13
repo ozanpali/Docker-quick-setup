@@ -16,6 +16,7 @@ apt install ssh -y
 service ssh start
 apt install vim -y
 apt install bash-completion
+source .bashrc
 adduser username  # set your username
 ```
 ```
