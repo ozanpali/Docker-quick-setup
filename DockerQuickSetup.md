@@ -14,8 +14,11 @@ apt update
 apt install sudo 
 apt install ssh -y
 service ssh start
-apt install vim git -y
+apt install vim git build-essential -y
+source ~/.bashrc
 apt install bash-completion
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 source ~/.bashrc
 
 
