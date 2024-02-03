@@ -10,16 +10,21 @@ docker run -it --name 2204 --net jammyJellyfishNetwork --ip 172.22.0.4  ubuntu:2
 
 ```
 ```
-apt update
-apt install sudo 
-apt install ssh -y
-service ssh start
-apt install vim git build-essential -y
-source ~/.bashrc
-apt install bash-completion
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-source ~/.bashrc
+apt update;
+apt install sudo; 
+apt install ssh -y;
+service ssh start;
+apt install vim git build-essential -y;
+source ~/.bashrc;
+apt install bash-completion;
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf;
+~/.fzf/install;
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
+cd ~/.pyenv && src/configure && make -C src;
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc;
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc;
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc;
+source ~/.bashrc;
 
 
 adduser username  # set your username
@@ -34,8 +39,8 @@ adduser username sudo # to give sudo permission
 vim /etc/ssh/sshd_config 
 ```
 ```
-service sshd restart
-su username
+service sshd restart;
+su username;
 ```
 
 
