@@ -79,6 +79,8 @@ ssh username@$ipaddress -X
 #!/bin/bash
 docker start container_name
 docker container exec -d container_name service ssh start   # activates ssh of container with detach mode.
+sleep 0.012
+clear -x
 # if you have assigned a static ip when you used run command 
 ssh username@thatStaticIp -X
 ```
