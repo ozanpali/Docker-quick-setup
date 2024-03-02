@@ -72,6 +72,7 @@ docker start container_name
 docker container exec -d container_name service ssh start   # activates ssh of container with detach mode.
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name | xclip # xclip should be installed
 ipaddress=`xclip -o`
+sleep 0.012
 ssh username@$ipaddress -X
 ```
 ## for static ip
@@ -84,8 +85,6 @@ clear -x
 # if you have assigned a static ip when you used run command 
 ssh username@thatStaticIp -X
 ```
-
-# note: first call may not work after boot, after first attempt it will work properly
 
 
 
