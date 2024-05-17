@@ -24,6 +24,7 @@ cd ~/.pyenv && src/configure && make -C src;
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc;
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc;
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc;
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  # rust install
 source ~/.bashrc;
 
 
