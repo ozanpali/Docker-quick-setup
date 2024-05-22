@@ -14,7 +14,7 @@ apt update;
 apt install sudo; 
 apt install ssh -y;
 service ssh start;
-apt install vim git curl wget build-essential -y;
+apt install vim git curl wget build-essential gnome-shell-pomodoro -y;
 source ~/.bashrc;
 apt install bash-completion;
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf;
