@@ -26,7 +26,7 @@ sudo apt install ssh -y;
 sudo service ssh start;
 sudo apt install vim git curl wget build-essential gnome-shell-pomodoro bash-completion -y;
 source ~/.bashrc;
-git clone --depth 0 https://github.com/junegunn/fzf.git ~/.fzf;
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf;
 ~/.fzf/install;
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
 cd ~/.pyenv && src/configure && make -C src;
