@@ -28,7 +28,7 @@ sudo apt install vim git curl wget build-essential gnome-shell-pomodoro bash-com
 source ~/.bashrc;
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf;
 ~/.fzf/install;
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
+git clone --depth 1 https://github.com/pyenv/pyenv.git ~/.pyenv;
 cd ~/.pyenv && src/configure && make -C src;
 #dependencies
 sudo apt update; sudo apt install build-essential libssl-dev zlib0g-dev \
