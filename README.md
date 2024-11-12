@@ -5,8 +5,12 @@ docker run -it --name container_name ubuntu:20.04
 ```
 ## Option 2 (if you wanna assign a static ip)
 ```
-docker network create --subnet=172.22.0.0/16 jammyJellyfishNetwork
-docker run -it --name 2204 --net jammyJellyfishNetwork --ip 172.22.0.4  ubuntu:22.04  
+docker network create --subnet=192.168.1.0/24 docker-network
+
+docker run -it --name 2004 --net docker-network --ip 192.168.1.2  ubuntu:20.04  
+
+docker run -it --name 2204 --net docker-network --ip 192.168.1.3  ubuntu:22.04  
+
 ```
 ```
 apt update;
